@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \"node dist/index.js\""
   },
   "repository": {
     "type": "git",
@@ -18,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/donghyuk454/Sample_Typescript/issues"
   },
-  "homepage": "https://github.com/donghyuk454/Sample_Typescript#readme"
+  "homepage": "https://github.com/donghyuk454/Sample_Typescript#readme",
+  "dependencies": {
+    "tsc-watch": "4.2.3",
+    "typescript": "3.8.3"
+  }
 }
